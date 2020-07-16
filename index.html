@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epam</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="signin()">Sign In</button>
+                <button type="button" class="toggle-btn" onclick="signup()">Sign Up</button>
+            </div>
+            <div class="social-box">
+                <img src="assets/images/facebook.png" alt="facebook icon">
+                <img src="assets/images/twitter.png" alt="twitter icon">
+                <img src="assets/images/googleplus.png" alt="">
+            </div>
+
+            <form id="signin" class="input-group">
+
+                <input type="email" class="input-field" placeholder="Enter Email" id="email" required>
+                <input type="password" class="input-field" placeholder="Enter password" id="password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password!</span>
+                <button type="submit" class="submit-btn" onclick="check()">Sign In</button>
+            </form>
+            <form id="signup" class="input-group">
+                <input type="text" class="input-field" placeholder="Enter UserName" id="username" required>
+                <input type="email" class="input-field" placeholder="Enter Email" id="email1" required>
+                <input type="password" class="input-field" placeholder="Enter password" id="password1" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+                <button type="submit" class="submit-btn" onclick="store()">Sign Up</button>
+            </form>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
